@@ -27,6 +27,7 @@ body {
 
 h2 {
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .hourglass {
@@ -315,5 +316,48 @@ $ease-out-sine: cubic-bezier(0.61, 1, 0.88, 1);
   56%,
   to {
     transform: scale(1, 1);
+  }
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.loading-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  text-align: center;
+
+  background: #58c;
+  border-radius: 0;
+  border: 0px solid #246;
+  border-width: 0px 0px 4px 0px;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: initial;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-size: 1rem;
+  font-style: normal;
+
+  &--disabled {
+    background: #a3b8d1;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: #469;
+  }
+
+  a {
+    all: unset;
   }
 }
